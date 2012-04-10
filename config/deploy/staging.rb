@@ -7,4 +7,4 @@ role :app, "ccistudios.com"
 # directories
 set :deploy_to, "/home/kiwanis/subdomains/dev"
 set :public, "#{deploy_to}/public_html"
-set :extensions, %w[public template]
+set :extensions, %w[com_slideshow public template]

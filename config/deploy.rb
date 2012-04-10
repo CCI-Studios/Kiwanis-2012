@@ -10,7 +10,7 @@ set :repository,  "git@github.com:CCI-Studios/Kiwanis-2012.git"
 set :scm, :git
 
 # ssh settings
-set :user, "USERNAME"
+set :user, "kiwanis"
 set :use_sudo, false
 
 # Joomla
