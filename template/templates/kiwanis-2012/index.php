@@ -24,6 +24,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 	$testing = false;
 }
 
+JHtml::_('behavior.mootools');
 $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 $typekit = null; // "epj0tcb";
 ?>
@@ -88,17 +89,22 @@ $typekit = null; // "epj0tcb";
 
 	<!-- load scripts -->
 	<?php if ($testing): ?>
-		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
+
+		<script src="/templates/<?= $this->template ?>/js/script-init.js"></script>
 	<?php else: ?>
-		<script>
-			var _gaq=[["_setAccount","<?php echo $analytics?>"],["_trackPageview"]];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-				g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-				s.parentNode.insertBefore(g,s)}(document,"script"));
-	  	</script>
+		<?php if ($analytics): ?>
+			<script>
+				var _gaq=[["_setAccount","<?php echo $analytics?>"],["_trackPageview"]];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+					g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+					s.parentNode.insertBefore(g,s)}(document,"script"));
+	  		</script>
+	  	<?php endif; ?>
 		<script src="/templates/<?= $this->template ?>/js/scripts.min.js"></script>
 	<?php endif; ?>
 </body>

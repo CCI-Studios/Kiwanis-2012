@@ -9,5 +9,7 @@ window.addEvent('domready', function() {
 
 window.addEvent('load', function () {
 	// columns
-	c = new CCI.Columns($('bottom'), '.module > div > div');
+	c = new CCI.Columns($('bottom'), '.module > div > div > div', {
+		offset: 24
+	});
 });

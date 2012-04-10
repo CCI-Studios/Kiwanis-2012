@@ -1,36 +1,37 @@
 /* elements */
 body {
-	background: #0f2547;
-	font-size: 0.75em; /* 12 */
-	line-height: 1.5em; /* 18/12 */
-}
+  background: #0f2546;
+  font-size: 0.75em;
+  /* 12 */
+  line-height: 1.5em;
+  /* 18/12 */ }
 
 body, select, input, textarea {
-	color: #072e67;
-	font-family: Helvetica, Arial, sans-serif;
-}
+  color: #072e67;
+  font-family: Helvetica, Arial, sans-serif; }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 { 
-	font-weight: bold;
-	color: #e7a300;
-	margin-top: 0;
-}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #e7a300;
+  margin-top: 0; }
 
-body.home h1 { color: #0f2546; }
+body.home h1 {
+  color: #0f2546; }
 
 h1 .word1, h2 .word1, h3 .word1,
-h4 .word1, h5 .word1, h6 .word1 { color: #0f2546; }
+h4 .word1, h5 .word1, h6 .word1 {
+  color: #0f2546; }
 
-h1 { 
-	font-size: 1.5em;
-	padding-bottom: .611111111em;
-	border-bottom: 1px solid #edeae1;
-	margin-bottom: .555555556em;
-}
+h1 {
+  font-size: 1.5em;
+  padding-bottom: .611111111em;
+  border-bottom: 1px solid #edeae1;
+  margin-bottom: .555555556em; }
 
 a, a:active, a:visited {
-	color: #e7a300;
-	text-decoration: none;
-}
-a:hover { text-decoration: underline; }
+  color: #e7a300;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }

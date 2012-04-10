@@ -1,35 +1,42 @@
 /* styles */
-.clr, .clear { clear: both; }
-.left { float: left; }
-.right { float: right; }
+.clr, .clear {
+  clear: both; }
 
-.hidden { display: none; }
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.hidden {
+  display: none; }
 
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
 /* TODO Update selection BG color */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none; }
 
+::selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none; }
 
 .read-more {
-	background: url(../images/read-more.png) left -33px no-repeat;
-	padding-left: 11px;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-}
-
-.read-more > a {
-	background: url(../images/read-more.png) right -66px no-repeat;
-	padding: 0 11px 0 9px;
-	line-height: 33px;
-	display: block;
-	color: white;
-}
-
-.read-more > a:hover {
-	color: #e7a300;
-	text-decoration: none;
-}
+  background: url(../images/read-more.png) left -33px no-repeat;
+  padding-left: 11px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+  .read-more > a {
+    background: url(../images/read-more.png) right -66px no-repeat;
+    padding: 0 11px 0 9px;
+    line-height: 33px;
+    display: block;
+    color: white; }
+    .read-more > a:hover {
+      color: #e7a300;
+      text-decoration: none; }
