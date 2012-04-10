@@ -1,0 +1,54 @@
+/* layout */
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	position: relative;
+}
+
+
+#header { background: #10284b url(../images/header-background.jpg) top center no-repeat; }
+#header > div {	background: url(../images/header-bar.jpg) repeat-x top; }
+#header > div > div { padding: 20px 0; }
+
+#body { 
+	background: url(../images/rope-top.png) top repeat-x;
+	padding-top: 5px;
+}
+#body > div {
+	background: url(../images/rope-bottom.png) bottom repeat-x;
+	padding-bottom: 5px;
+}
+#body > div > div { background: #fff; padding: 1px 0; }
+#body > div > div > div { 
+	margin-top: 24px;
+	margin-bottom: 29px;
+}
+
+#component {
+	width: 590px;
+	margin-right: 45px;
+	float: left;
+}
+
+#sidebar {
+	width: 305px;
+	float: left;
+}
+
+#footer > div {
+	padding: 10px 0;
+	border-bottom: 1px solid #081325;
+}
+
+#copyright > div {
+	padding: 10px 0;
+	border-top: 1px solid #1c3356;
+}
+
+#copyright > div, #copyright > div a {
+	color: white;
+	font-size: 0.833333333em; /* 10/12 */
+	text-align: center;
+}

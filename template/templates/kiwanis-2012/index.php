@@ -25,6 +25,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 }
 
 $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
+$typekit = null; // "epj0tcb";
 ?>
 
 <head>
@@ -50,29 +51,36 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	<?php else: ?>
 		<script src="/templates/<?= $this->template ?>/js/libs/modernizr-1.7.min.js"></script>
 	<?php endif; ?>
+
+	<?php if ($typekit): ?>
+	<script type="text/javascript" src="http://use.typekit.com/<?= $typekit ?>.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<?php endif; ?>
 </head>
 
 <body class="<?= $menu ?>">
 
-	<div id="wrapper">
-		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
-		</header>
+	<div id="header"><div><div class="container">
+		<jdoc:include type="modules" name="header" style="rounded" />
+	</div></div></div>
 
-		<div id="main">
-			<aside>
-				<jdoc:include type="modules" name="left" style="xhtml" />
-			</aside>
+	<div id="body"><div><div><div class="container">
+		<div id="component"><jdoc:include type="component" /></div>
+		<div id="sidebar"><jdoc:include type="modules" name="sidebar" style="rounded" /></div>
 
-			<article>
-				<jdoc:include type="component" />
-			</article>
-		</div>
+		<div id="bottom"><jdoc:include type="modules" name="bottom" style="rounded" /></div>
 
-		<footer>
-			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</footer>
-	</div>
+		<div class="clear"></div>
+	</div></div></div></div>
+
+	<div id="footer"><div class="container">
+		<jdoc:include type="modules" name="footer" style="rounded" />
+	</div></div>
+
+	<div id="copyright"><div class="container">
+		&copy; Seaway Kiwanis <?= date('Y'); ?>. All Rights Reserved.<br/>
+		Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a>
+	</div></div>
 
 	<div class="hidden">
 		<jdoc:include type="modules" name="hidden" style="raw" />
@@ -80,6 +88,7 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 
 	<!-- load scripts -->
 	<?php if ($testing): ?>
+		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>

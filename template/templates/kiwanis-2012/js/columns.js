@@ -17,13 +17,14 @@ CCI.Columns = new Class({
 		this.selector = selector;
 		this.columns = this.container.getElements(this.selector);
 		
-		this.offset = 52;
+		this.offset = 20;
 		this.height = 0;
 		
 		for (i = this.columns.length - 1; i >= 0; i--) {
 			height = this.columns[i].getSize().y - this.offset;
 			if (height > this.height) {
 				this.height = height;
+				console.log(height);
 			}
 		}
 		
@@ -33,5 +34,5 @@ CCI.Columns = new Class({
 });
 
 window.addEvent('load', function () {
-	c = new CCI.Columns($('bottom'), '.moduletable');
+	c = new CCI.Columns($('bottom'), '.module > div > div');
 });

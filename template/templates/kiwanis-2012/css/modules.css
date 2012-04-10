@@ -1,0 +1,55 @@
+/* @group modules */
+.module.bordered {
+	background: url(../images/module-bottom.png) bottom no-repeat;
+	padding-bottom: 19px;
+	border: none;
+}
+
+.module.bordered > div {
+	background: url(../images/module-top.png) top no-repeat;
+	padding-top: 7px;
+}
+
+.module.bordered > div > div {
+	background: url(../images/module-center.png) top repeat-y;
+	padding: 12px 25px;
+	position: relative;
+}
+
+.module.bordered h3 {
+	font-size: 1.5em; /* 18/12 */
+	border-bottom: 1px solid #edeae1;
+	margin: 0;
+	padding: 0 0 12px;
+}
+
+.module.bordered img {
+	border: 7px solid #edece6;
+	margin: 0 20px 10px 0;
+	float: left;
+}
+
+.module.bordered .read-more {
+	background-position: left 0;
+	position: absolute;
+	bottom: -24px;
+	right: 25px;
+}
+
+
+/* @group sidebar */
+#sidebar .module {
+	border-bottom: 1px solid #edeae1;
+	margin: 18px 0;
+}
+
+body.home #sidebar .module { border-bottom: none; }
+
+/* @group bottom */
+#bottom .module {
+	width: 302px;
+	float: left;
+	margin-left: 17px;
+}
+
+#bottom .module:first-child { margin-left: 0; }
