@@ -9,7 +9,6 @@
 	position: relative;
 }
 
-
 #header { 
 	background: $colors-darkblue url(../images/header-background.jpg) top center no-repeat;
 	> div {	background: url(../images/header-bar.jpg) repeat-x top; }
@@ -34,14 +33,18 @@
 }
 
 #component {
-	width: 590px;
-	margin-right: 45px;
+	width: 623px;
+	margin-right: 12px;
 	float: left;
 }
 
 #sidebar {
 	width: 305px;
 	float: left;
+}
+
+#bottom {
+	clear: both;
 }
 
 #footer > div {

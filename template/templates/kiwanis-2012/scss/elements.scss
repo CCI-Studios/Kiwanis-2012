@@ -5,6 +5,8 @@ body {
 	background: $colors-blue;
 	font-size: 0.75em; /* 12 */
 	line-height: 1.5em; /* 18/12 */
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 body, select, input, textarea {
@@ -19,8 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 }
 
-body.home h1 { color: $colors-blue; }
-
 h1 .word1, h2 .word1, h3 .word1,
 h4 .word1, h5 .word1, h6 .word1 { color: $colors-blue; }
 
@@ -29,10 +29,20 @@ h1 {
 	padding-bottom: .611111111em;
 	border-bottom: 1px solid #edeae1;
 	margin-bottom: .555555556em;
+
+	body.home & { 
+		color: $colors-blue;
+		border-bottom: none;
+		margin-bottom: 0;
+	}
 }
+
+
 
 a, a:active, a:visited {
 	color: $colors-gold;
 	text-decoration: none;
+
+	&:hover { text-decoration: underline; }
 }
-a:hover { text-decoration: underline; }
+

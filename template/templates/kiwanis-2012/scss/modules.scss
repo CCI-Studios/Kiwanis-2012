@@ -9,12 +9,11 @@
 	> div {
 		background: url(../images/module-top.png) top no-repeat;
 		padding-top: 7px;
-	
-		> div > div {
-			background: url(../images/module-center.png) top repeat-y;
-			padding: 12px 25px;
-			position: relative;
-		}
+	}
+	> div > div {
+		background: url(../images/module-center.png) top repeat-y;
+		padding: 12px 25px;
+		position: relative;
 	}
 
 	h3 {
@@ -38,15 +37,14 @@
 	}
 }
 
+.module.underline {
+	border-bottom: 1px solid #edeae1;
+}
+
 
 /* @group sidebar */
 #sidebar .module {
-	border-bottom: 1px solid #edeae1;
 	margin: 18px 0;
-
-	body.home & {
-		border-bottom: none;
-	}
 }
 
 /* @group bottom */

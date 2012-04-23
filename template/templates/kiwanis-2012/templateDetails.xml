@@ -33,13 +33,4 @@
 		<position>bottom</position>
 		<position>footer</position>
 	</positions>
-
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-			</fieldset>
-			<fieldset name="advanced">
-			</fieldset>
-		</fields>
-	</config>
 </extension>

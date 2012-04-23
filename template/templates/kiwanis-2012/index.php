@@ -35,7 +35,7 @@ $typekit = null; // "epj0tcb";
 
  	<jdoc:include type="head" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=960px, initial-scale=1.0">
 	<link rel="shortcut icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
 
@@ -64,6 +64,10 @@ $typekit = null; // "epj0tcb";
 	<div id="header"><div><div class="container">
 		<jdoc:include type="modules" name="header" style="rounded" />
 	</div></div></div>
+
+	<div id="masthead"><div>
+		<jdoc:include type="modules" name="masthead" style="rounded" />
+	</div></div>
 
 	<div id="body"><div><div><div class="container">
 		<div id="component"><jdoc:include type="component" /></div>

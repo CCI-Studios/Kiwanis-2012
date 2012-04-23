@@ -1,37 +1,35 @@
 @import "_variables";
 
 /* @group hmenu */
-.hmenu {
-	.menu {
-		margin: 0;
-		padding: 0;
-	
-		> li {
-			display: inline-block;
-			*display: inline;
-			*zoom: 1;
-			position: relative;
-			margin: 0 0 0 20px;
-			text-transform: uppercase;
+.hmenu .menu {
+	margin: 0;
+	padding: 0;
 
-			&:first-child {
-				margin: 0;
-				padding: 0;
-			}
+	> li {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		position: relative;
+		margin: 0 0 0 20px;
+		text-transform: uppercase;
 
-			> a, > span {
-				display: block;
-				font-size: 0.916666667em; /* 13/12 */
-				font-weight: bold;
-				line-height: 25px;
-				color: #fff;
-			}
+		&:first-child {
+			margin: 0;
+			padding: 0;
+		}
 
-			&.active > a, &.active > span,
-			> a:hover, > span:hover {
-				color: #e7a300;
-				text-decoration: none;
-			}
+		> a, > span {
+			display: block;
+			font-size: 0.916666667em; /* 13/12 */
+			font-weight: bold;
+			line-height: 25px;
+			color: #fff;
+		}
+
+		&.active > a, &.active > span,
+		> a:hover, > span:hover {
+			color: #e7a300;
+			text-decoration: none;
 		}
 	}
 }
