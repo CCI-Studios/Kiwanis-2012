@@ -121,6 +121,7 @@ namespace :deploy do
     transaction do
       run "mkdir -p #{deploy_to}/releases"
       run "mkdir -p #{deploy_to}/shared"
+      rum "mkdir -p #{deploy_to}/shared/extension_uploads"
       run "mkdir -p #{public}"
       run "chmod 755 #{public}"
 
@@ -131,6 +132,25 @@ namespace :deploy do
       CMD
       
       joomla::setup
+    end
+  end
+
+  task :restore do
+    transaction do
+      run "mkdir -p #{deploy_to}/releases"
+      run "mkdir -p #{deploy_to}/shared"
+      run "mkdir -p #{public}"
+      run "chmod 755 #{public}"
+
+      run <<-CMD
+        cd #{deploy_to}/shared &&
+        curl -sLk #{symlinker_url} > symlinker &&
+        chmod +x symlinker
+      CMD
+      
+      run "mv #{public}/configuration.php #{deploy_to}/shared/config.php"
+      joomla::symlink
+      joomla::install_default
     end
   end
 
@@ -147,8 +167,17 @@ namespace :deploy do
   end
 
   task :symlink_modules, :except => { :no_release => true } do
-    extensions.each do |path|
-      run "#{deploy_to}/shared/symlinker #{current_path}/#{path} #{public}"
+    extensions.each do |extension|
+      real_path = "#{release_path}/#{extension}/media/#{extension}"
+      up_path = "#{deploy_to}/shared/extension_uploads/#{extension}"
+
+      run <<-CMD
+        #{deploy_to}/shared/symlinker #{current_path}/#{extension} #{public};
+        if [ -d #{real_path} ]; then
+          mkdir -p #{up_path};
+          ln -nsf #{up_path} #{real_path}/uploads;
+        fi
+      CMD
     end
   end
 
@@ -159,3 +188,4 @@ end
 
 after "deploy:symlink", "deploy:symlink_modules"
 after "deploy:finalize_update", "deploy:finalize"
+after "deploy:finalize_update", "deploy:symlink_modules"
