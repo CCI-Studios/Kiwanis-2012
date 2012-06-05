@@ -35,7 +35,6 @@ $typekit = null; // "epj0tcb";
 
  	<jdoc:include type="head" />
 
-	<meta name="viewport" content="width=960px, initial-scale=1.0">
 	<link rel="shortcut icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
 
