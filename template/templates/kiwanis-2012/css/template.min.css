@@ -616,10 +616,12 @@ button {
 .hmenu.top > div > div {
   padding: 0 15px; }
 
-.hmenu.top .menu > li {
-  margin: 0;
-  padding: 0 0 0 32px;
-  background: url(../images/menu-top-divider.png) 17px no-repeat; }
+.hmenu.top .menu {
+  line-height: 31px; }
+  .hmenu.top .menu > li {
+    margin: 0;
+    padding: 0 0 0 32px;
+    background: url(../images/menu-top-divider.png) 17px no-repeat; }
 
 .hmenu.top .menu > li:first-child {
   margin: 0;
