@@ -26,7 +26,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 
 JHtml::_('behavior.mootools');
 $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
-$typekit = null; // "epj0tcb";
+$typekit = 'epj0tcb';
 ?>
 
 <head>

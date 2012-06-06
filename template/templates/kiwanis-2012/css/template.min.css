@@ -379,7 +379,8 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-family: 'alternate-gothic-no-1-d', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   color: #e7a300;
   margin-top: 0; }
 
@@ -388,7 +389,7 @@ h4 .word1, h5 .word1, h6 .word1 {
   color: #0f2546; }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 3.0em;
   padding-bottom: .611111111em;
   border-bottom: 1px solid #edeae1;
   margin-bottom: .555555556em; }
@@ -396,6 +397,21 @@ h1 {
     color: #0f2546;
     border-bottom: none;
     margin-bottom: 0; }
+
+h2 {
+  font-size: 2.0em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1.0em; }
 
 a, a:active, a:visited {
   color: #e7a300;
@@ -513,7 +529,7 @@ button {
     margin: 1px 0;
     *zoom: 1; }
   .module.bordered h3 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     /* 18/12 */
     border-bottom: 1px solid #edeae1;
     margin: 0;
