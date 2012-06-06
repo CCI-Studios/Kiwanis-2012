@@ -636,6 +636,7 @@ button {
       border-radius: 0 0 5px 5px;
       background: url(../images/mod_slideshow/background.png);
       border-bottom: 6px solid #10284b;
+      text-shadow: 3px 3px 5px #00;
       opacity: 0;
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
