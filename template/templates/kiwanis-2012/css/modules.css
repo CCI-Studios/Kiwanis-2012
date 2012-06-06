@@ -19,7 +19,8 @@
     /* 18/12 */
     border-bottom: 1px solid #edeae1;
     margin: 0;
-    padding: 0 0 12px; }
+    padding: 0 0 12px;
+    text-transform: uppercase; }
   .module.bordered img {
     border: 7px solid #edece6;
     margin: 0 20px 10px 0;
