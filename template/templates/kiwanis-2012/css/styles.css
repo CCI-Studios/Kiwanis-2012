@@ -40,3 +40,6 @@
     .read-more > a:hover {
       color: #e7a300;
       text-decoration: none; }
+
+.chronoform {
+  display: none; }
