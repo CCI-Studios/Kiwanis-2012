@@ -10,7 +10,8 @@
   #header > div {
     background: url(../images/header-bar.jpg) repeat-x top; }
   #header > div > div {
-    padding: 20px 0; }
+    padding: 20px 10px;
+    width: 920px; }
 
 #body {
   background: url(../images/rope-top.png) top repeat-x;

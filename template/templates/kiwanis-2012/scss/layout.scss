@@ -12,7 +12,10 @@
 #header { 
 	background: $colors-darkblue url(../images/header-background.jpg) top center no-repeat;
 	> div {	background: url(../images/header-bar.jpg) repeat-x top; }
-	> div > div { padding: 20px 0; }
+	> div > div { 
+		padding: 20px 10px;
+		width: 920px;
+	}
 }
 
 #body { 
