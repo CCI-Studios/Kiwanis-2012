@@ -27,6 +27,10 @@
 			background: #fff; 
 			padding: 1px 0;
 			*zoom: 1;
+
+			body.home & {
+				padding-top: 25px;
+			}
 		}
 	}
 
