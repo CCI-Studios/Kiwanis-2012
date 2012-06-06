@@ -16,7 +16,8 @@
 			color: #fff;
 
 			border-radius: 0 0 5px 5px;
-			background: url(../images/mod_slideshow/description-bottom.png) bottom repeat-x;
+			background: url(../images/mod_slideshow/background.png);
+			border-bottom: 6px solid $colors-darkblue;
 
 			opacity: 0;
 			-webkit-transition: all 0.2s linear;
@@ -30,6 +31,10 @@
 			}
 
 			h2 .word1 { color: $colors-gold; }
+
+			.ie7 &, .ie8 & {
+				display: none;
+			}
 		}
 
 		img {
@@ -38,6 +43,10 @@
 
 		&.active .description {
 			opacity: 1;
+
+			.ie7 &, .ie8 & {
+				display: block;
+			}
 		}
 	}
 
@@ -49,5 +58,9 @@
 		height: 30px;
 
 		background: url(../images/mod_slideshow/slideshow-top.png) top no-repeat;
+	}
+
+	.ie7 & .overlay4 {
+		margin-left: -471px;
 	}
 }

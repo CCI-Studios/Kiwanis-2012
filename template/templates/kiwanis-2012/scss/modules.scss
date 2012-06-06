@@ -15,6 +15,11 @@
 		padding: 12px 25px;
 		position: relative;
 	}
+	> div > div > div {
+		padding: 1px 0;
+		margin: 1px 0;
+		*zoom: 1;
+	}
 
 	h3 {
 		font-size: 1.5em; /* 18/12 */
@@ -32,7 +37,7 @@
 	.read-more {
 		background-position: left 0;
 		position: absolute;
-		bottom: -24px;
+		bottom: -12px;
 		right: 25px;
 	}
 }

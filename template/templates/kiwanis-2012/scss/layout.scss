@@ -23,7 +23,11 @@
 		background: url(../images/rope-bottom.png) bottom repeat-x;
 		padding-bottom: 5px;
 
-		> div { background: #fff; padding: 1px 0; }
+		> div { 
+			background: #fff; 
+			padding: 1px 0;
+			*zoom: 1;
+		}
 	}
 
 	> div > div > div { 

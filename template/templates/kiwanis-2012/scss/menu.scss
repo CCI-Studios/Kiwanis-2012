@@ -10,7 +10,8 @@
 		*display: inline;
 		*zoom: 1;
 		position: relative;
-		margin: 0 0 0 20px;
+		margin: 0;
+		padding: 0 0 0 20px;
 		text-transform: uppercase;
 
 		&:first-child {
@@ -73,9 +74,9 @@
 .hmenu.top > div > div { padding: 0 15px; }
 
 .hmenu.top .menu > li {
-	margin: 0 0 0 15px;
-	padding: 0 0 0 17px;
-	background: url(../images/menu-top-divider.png) left no-repeat;
+	margin: 0;
+	padding: 0 0 0 32px;
+	background: url(../images/menu-top-divider.png) 17px no-repeat;
 }
 
 .hmenu.top .menu > li:first-child {

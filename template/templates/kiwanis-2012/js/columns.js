@@ -33,6 +33,7 @@ CCI.Columns = new Class({
 		
 		for (i = this.columns.length - 1; i >= 0; i--) {
 			h = this.columns[i].getSize().y - this.options.offset;
+			console.log(h);
 			if (h > height) {
 				height = h;
 			}

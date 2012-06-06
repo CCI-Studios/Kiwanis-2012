@@ -20,7 +20,8 @@
     padding-bottom: 5px; }
     #body > div > div {
       background: #fff;
-      padding: 1px 0; }
+      padding: 1px 0;
+      *zoom: 1; }
   #body > div > div > div {
     margin-top: 24px;
     margin-bottom: 29px; }
