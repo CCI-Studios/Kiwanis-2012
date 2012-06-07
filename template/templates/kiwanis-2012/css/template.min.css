@@ -683,6 +683,31 @@ button {
     background: url(../images/mod_slideshow/slideshow-top.png) top no-repeat; }
   .ie7 .mod_slideshow.continuous .overlay4 {
     margin-left: -471px; }
+  .mod_slideshow.continuous .thumbs {
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+    width: 100%;
+    display: none; }
+    .mod_slideshow.continuous .thumbs > div {
+      width: 920px;
+      margin: 0 auto; }
+    .mod_slideshow.continuous .thumbs > div > div {
+      float: right;
+      background: url(../images/read-more.png) left 0 no-repeat;
+      padding-left: 11px; }
+      .mod_slideshow.continuous .thumbs > div > div > div {
+        background: url(../images/read-more.png) right -66px no-repeat;
+        padding: 0 11px 0 5px; }
+    .mod_slideshow.continuous .thumbs .thumb {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      line-height: 33px;
+      color: #fff;
+      padding: 0 2px; }
+      .mod_slideshow.continuous .thumbs .thumb.active {
+        font-weight: bold; }
 
 /* styles */
 .clr, .clear {

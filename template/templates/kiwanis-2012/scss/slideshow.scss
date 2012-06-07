@@ -64,4 +64,43 @@
 	.ie7 & .overlay4 {
 		margin-left: -471px;
 	}
+
+	.thumbs {
+		position: absolute;
+		bottom: -6px;
+		right: 0;
+		width: 100%;
+
+		display: none;
+
+		> div {
+			width: 920px;
+			margin: 0 auto;
+		}
+
+		> div > div {
+			float: right;
+			background: url(../images/read-more.png) left 0 no-repeat;
+			padding-left: 11px;
+
+			> div {
+				background: url(../images/read-more.png) right -66px no-repeat;
+				padding: 0 11px 0 5px;
+			}
+		}
+
+		.thumb {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+
+			line-height: 33px;
+			color: #fff;
+			padding: 0 2px;
+
+			&.active {
+				font-weight: bold;
+			}
+		}
+	}
 }
