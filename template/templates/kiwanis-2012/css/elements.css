@@ -17,6 +17,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #e7a300;
   margin-top: 0; }
+  h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    line-height: 1em; }
 
 h1 .word1, h2 .word1, h3 .word1,
 h4 .word1, h5 .word1, h6 .word1 {

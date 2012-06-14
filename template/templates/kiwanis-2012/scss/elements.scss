@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	color: $colors-gold;
 	margin-top: 0;
+
+	span {
+		line-height: 1em;
+	}
 }
 
 h1 .word1, h2 .word1, h3 .word1,
