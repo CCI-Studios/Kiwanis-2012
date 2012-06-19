@@ -149,6 +149,7 @@ namespace :deploy do
       CMD
       
       run "mv #{public}/configuration.php #{deploy_to}/shared/config.php"
+      run "chmod 755 #{deploy_to}/shared/config.php"
       joomla::symlink
       joomla::install_default
     end
